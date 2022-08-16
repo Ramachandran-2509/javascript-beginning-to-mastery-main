@@ -1,0 +1,50 @@
+
+
+when you apply design in your screen
+
+* last three important for when you insert the image
+   first change size and position and also repeat : no-repeat
+.header{
+
+    min-height: 100vh;
+    background: url("./bg-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+2. when you remove the underline your href link
+	we can use the below method
+a {
+    text-decoration:none;
+    color:white
+}
+
+3. when change nav overall box
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 90%;
+}
+
+4. nav contains two class first nav and container
+	first already declared container
+	second now nav declare 
+
+.nav {
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+5 finall result left side website and right side
+
+.nav-items {
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+
