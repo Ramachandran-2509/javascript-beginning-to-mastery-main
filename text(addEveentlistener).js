@@ -3,6 +3,8 @@
           // it's full of queryselector methods 
 
 
+
+
 // const headings = document.querySelectorAll('a');
 
 // When we access all the a tag we can use querySelectorAll method.and 
@@ -27,11 +29,12 @@
 
 
 // const headline = document.querySelector('#main-heading');
- const headline1 = document.getElementById('main-heading');
-// console.log(headline1);
+// const headline1 = document.getElementById('main-heading');
+// console.log(headline);
 
 // we can create element using document and create classname and id
 // we can create two method for classnam and Ifd
+
 
 // Example 1 : using className and id
 
@@ -53,12 +56,16 @@
 // console.log(headline1);
 
 
+
+
+
 // now we can play with buttons
 
 // const button  = document.querySelector(".btn-headline");
+
 // button.addEventListener("click", (e) => {
-//     button.innerHTML = "we can more text";
-//     button.style.backgroundColor = "red";
+//     button.innerHTML = "Everything will be change";
+//     button.style.backgroundColor = "Aqua";
 // })
 
 
