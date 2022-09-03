@@ -7,6 +7,7 @@
 // console.log("script end");
   const body = document.body;
   const button = document.querySelector("button");
+  
 const intervalId = setInterval(() => {
   const red = Math.floor(Math.random() * 256);
   const green = Math.floor(Math.random() * 256);

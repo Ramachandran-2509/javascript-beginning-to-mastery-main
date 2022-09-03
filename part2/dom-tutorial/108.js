@@ -4,4 +4,4 @@ const navItems = document.getElementsByClassName("nav-item"); // HTMLCollection
 console.log(navItems);
 console.log(Array.isArray(navItems));
 const navItems1 = document.querySelectorAll(".nav-item"); // NodeList
-console.log(navItems1[1]);
+console.log(navItems1[0]);

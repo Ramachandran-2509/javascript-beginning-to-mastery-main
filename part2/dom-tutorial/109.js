@@ -16,21 +16,28 @@ console.log(navItems);
 //     navItem.style.fontWeight = "bold";
 //     navItem.style.padding = "2px";
 
-// }   
+// }
 
-for(let navItem of navItems){
-    navItem.style.backgroundColor = "#fff";
-    navItem.style.color = "green";
-    navItem.style.fontWeight = "bold";
-    navItem.href = "https://codprog.com";
-    navItem.style.padding = "2px";
-}
 
- const k = document.querySelectorAll(".nav-item");
-console.log(k);
- navItems = Array.from(k);
- console.log(navItems);
+
+
+
+
+
+// for(let navItem of navItems){
+//     navItem.style.backgroundColor = "#fff";
+//     navItem.style.color = "green";
+//     navItem.style.fontWeight = "bold";
+//     navItem.href = "https://codprog.com";
+//     navItem.style.padding = "2px";
+// }
+
+// const k = document.querySelectorAll(".nav-item");
+// console.log(k);
+// navItems = Array.from(k);
+// console.log(navItems);
 // console.log(Array.isArray(navItems));
+
 // navItems.forEach((navItem)=>{
 //     navItem.style.backgroundColor = "#fff";
 //     navItem.style.color = "green";
@@ -38,16 +45,21 @@ console.log(k);
 // })
 
 // console.log(Array.isArray(navItems));
-// const navItems = document.querySelectorAll(".nav-item"); // NodeList
-// console.log(navItems[1]);
 
-// let navItems1 = document.querySelectorAll("a");
-// console.log(navItems1);
+// const navItems1 = document.querySelectorAll(".nav-item"); // NodeList
+// console.log(navItems1[0]);
+
+
+
+
+let navItems1 = document.querySelectorAll("a");
+console.log(navItems1);
 // navItems = Array.from(navItems);
 // console.log(Array.isArray(navItems));
 // simple for loop 
 // for of loop 
 // forEach 
+
 // for(let i=0; i< navItems.length; i++){
 //     // console.log(navItems[i]);
 //     const navItem = navItems[i];

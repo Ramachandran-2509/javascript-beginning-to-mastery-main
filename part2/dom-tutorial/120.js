@@ -4,19 +4,19 @@
 // 1.) 
 const btn = document.querySelector(".btn-headline");
 // method --- addEventListener
-// function clickMe(){
-//     console.log("hey everything going good so far !!!!!");
-// }
-// btn.addEventListener("click", function(){
-//     console.log("hey everything going good so far !!!!!");
+function clickMe(){
+    console.log("hey everything going good!!!!!");
+}
+btn.addEventListener("click", function(){
+    console.log("hey everything going good so far !!!!!");
     
-// })
+})
     
 
 
-// btn.addEventListener("click", ()=>{
-//     console.log("arrow function !!!")
-// });
+btn.addEventListener("click", ()=>{
+    console.log("arrow function !!!")
+});
 
 
 

@@ -3,6 +3,7 @@
 
 
 //  q1: what is function declaration or statement or definition?
+
 // function declaration is a statement that declares a function.
 
 
@@ -13,6 +14,7 @@
 
 
 // q2: what is function expression?   
+
 // function expression is a statement that evaluates to a function.
 
 
@@ -23,6 +25,7 @@
 
 
  // q3: what is first class function?
+
 // first class function is a function that can be passed 
 // as an argument to another function, 
 // and can be returned by another function.
@@ -39,10 +42,11 @@
 
 
 // q / what is higher order function?
+
 // higher order function is a function 
 // that takes another function as an argument or returns a function.
 
-// const doubleFunc=function(x){
+// const doubleFunc = function(x){
 //     return x*2;
 //   }
 //   const doubleUp = doubleFunc;
@@ -67,6 +71,7 @@
 
 
 // Functions in Javascript
+
 // Q6-Function Scope
 
 // var num1=20,
@@ -84,15 +89,16 @@
 //         num2 =3;
 
 //     function add(){
+//      let name = "Roadside Coder";
 //         return name + "scored " +  (num1 + num2);
 //     }
 //     return add();
 
 // }
-// console.log(multiply1()); // Returns "Roadside Coder scored 33"
+// console.log(multiply1()); // Returns "Roadside Coder scored 43"
 
 
-// q7: fuunction scope - o/p based question
+// q7: function scope - o/p based question
 
 // for(let i=0; i<5; i++){
 //     setTimeout(function(){
@@ -110,12 +116,12 @@
 
 
 
-// Q9-Function Hoisting-O/PBased Question
+// Q9-Function Hoisting-O/ PBased Question
 
 // var x = 21;
 // var fun=function(){
 //   console.log(x);
-//   var x=20;
+//   var x = 20;
 // };
 // fun();  // undefined
 
@@ -150,15 +156,16 @@
 // }
 
 // const arr1 = [1,2,3,4,5];
-// console.log(add1(...arr1))
+// console.log(add1(...arr1)) // 15
+
 
 
 // q11: rest operator - o/p based question
 
 // const fn = (a, x, y, ...nums) => {
-//     console.log(x, y, nums);
+//     console.log(a, x, y, nums);
 // }
-// console.log(fn(1,2,3,4,5,6)); // 2 3 [4,5,6]
+// console.log(fn(1,2,3,4,5,6));  // 1 2 3 [4, 5, 6]
 
 
 
@@ -217,7 +224,7 @@
 // fn(1,3,2); it's shows 1,3,2
 
 // const  fnArr = ()=>{
-// console.log(arguments);
+// console.log(arguments)};
 
 // fnArr(1,3,2); //  it's  shows error because of arguments is not defined
 
@@ -237,4 +244,4 @@
   
 //   }  
 //   user.rc1();   
-//   user.rc2();
+//   user.rc2();  

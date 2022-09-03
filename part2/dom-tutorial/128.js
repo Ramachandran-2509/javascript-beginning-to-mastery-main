@@ -5,6 +5,7 @@ const parent = document.querySelector(".parent");
 const child = document.querySelector(".child");
 
 // capturing events
+
 // child.addEventListener(
 //   "click",
 //   () => {
@@ -26,6 +27,7 @@ const child = document.querySelector(".child");
 //   },
 //   true
 // );
+
 // document.body.addEventListener(
 //   "click",
 //   () => {
@@ -46,11 +48,12 @@ const child = document.querySelector(".child");
 // grandparent.addEventListener("click", () => {
 //   console.log("bubble grandparent");
 // });
+
 // document.body.addEventListener("click", () => {
 //   console.log("bubble document.body");
 // });
 
-// event delegation
-grandparent.addEventListener("click", (e) => {
-  console.log(e.target);
-});
+// // event delegation
+// grandparent.addEventListener("click", (e) => {
+//   console.log(e.target);
+// });

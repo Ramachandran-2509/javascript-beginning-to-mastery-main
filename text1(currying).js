@@ -1,42 +1,12 @@
-// closure is a technique to create a function
-// that has access to the variables and parameters 
-// of the outer function,
 
-// function outer(){
-//     var a = 10;
-//     function inner(){
-//         var b = 10
-//         console.log(a+b);
-//     }
-//     return inner;
-// }
-// var inner = outer();
-// inner();
+// currying:
 
 
-// function a(){
-//     var a=10
-//     function b(){
-//         var b=10
-//         function c(){
-//             var c=100
-//             console.log(`${a}${b}${c}`);
-//         }
-       
-//         c()
-//     }
-//     b()
-// }
+// currying is a technique to create a function
 
 
-// a()
-
-
-
-
-
-// currying is a technique to create a function 
 //that takes some of the arguments of the original 
+
 // function and returns a function that takes the rest of the arguments.
 
 // example1  : function k() to k()() write function
@@ -45,6 +15,7 @@
 // function k1(a,b){
 //     console.log(a, b)
 // }
+
 // k1(1,2);
 
 
@@ -58,7 +29,24 @@
 // console.log(k(2)(3)(4));   // 2 3 4
 
 
+// global scope
+// const e = 10;
+// function sum(a) {
+//   return function (b) {
+//     return function (c) {
+// outer functions scope
+//       return function (d) {
+// local scope
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// }
+
+
+
 // example2 : currying function
+
 //  question 1 - sum(2)(6)(1)
 
 // function l(a){
@@ -68,7 +56,7 @@
 //         }
 //     }
 // }
-// console.log(l(2)(6)(1)); // 6
+// console.log(l(2)(6)(1)); // 9
 
 
 // example3 : currying function
@@ -79,16 +67,6 @@
 //  evaluate("div",(4)(2))=>2
 
 
-// switch(operator){
-//     case "add":
-//         return a+b;
-//     case "mul":
-//         return a*b;
-//     case "sub":
-//         return a-b;
-//     case "div":
-//         return a/b;
-// }
 
 
 // function evaluate(operator){
@@ -98,7 +76,7 @@
 //             else if(operator ==="mul") return a*b;
 //             else if(operator==="sub") return a-b;
 //             else if(operator==="div") return a/b;
-//             else return `  ${operator} invalid operator`;    
+//             else return `${operator} invalid operator`;    
 //         }
         
 //     }
@@ -108,6 +86,7 @@
 
 
 // create infinite currying
+
 
 // function add(a){
 //     return function(b){
@@ -123,7 +102,7 @@
 
 
 // function curry(func){
-//     return function curriedFunc(... args){
+//     return function curriedFunc(...args){
 //       if(args.length>=func.length){
 //         return func(... args);
 //       }else{
@@ -131,9 +110,14 @@
 //           return curriedFunc(... args,... next);
 //   }
 //     };
-//       }
-//         };
-//   const sum = (a,b,c,d)=>a+b+c+d;
-//   const totalSum=curry(sum);
-//   console.log(totalSum(1)(6)(5)(78));
+//   }
+// };
+// const sum = (a,b,c,d)=>a+b+c+d;
+// const totalSum = curry(sum);
+// console.log(totalSum(1)(6)(5)(78));
+
+
+
+
+
 

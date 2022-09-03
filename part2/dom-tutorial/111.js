@@ -1,3 +1,5 @@
+// console.log(window)
+
 // const rootNode = document.getRootNode();
 // console.log(rootNode);
 // const htmlElementNode = rootNode.childNodes[0];
@@ -7,11 +9,15 @@
 // const textNode1 = htmlElementNode.childNodes[1];
 // const bodyElementNode = htmlElementNode.childNodes[2];
 // console.log(headElementNode.childNodes);
+
 // sibling relation 
 // const h1 = document.querySelector("h1");
 // const body = h1.parentNode.parentNode;
 // body.style.color = "#efefef";
 // body.style.backgroundColor = "#333"
+// console.log(body)
+
+
 // const body = document.body
 // body.style.color = "#efefef";
 // body.style.backgroundColor = "#333"

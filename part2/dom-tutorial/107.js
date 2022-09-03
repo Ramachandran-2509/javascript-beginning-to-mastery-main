@@ -11,8 +11,6 @@ console.log(link.getAttribute("href"));
 
 
 
-
-
 // the below example using getElementBYtagName
 // using specfice a tag we setattributes for particular a tag
 // const link1 = document.getElementsByTagName("a")[1];
