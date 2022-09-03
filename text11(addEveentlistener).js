@@ -196,9 +196,9 @@
 // beforeend;
 // afterend;
 
-// const todoList = document.querySelector(".todo-list");
-// todoList.insertAdjacentHTML("beforebegin", "<li>Teach Students </li>");
-// todoList.insertAdjacentHTML("beforebegin", "<li>learn JavaScript </li>");
+//  const todoList = document.querySelector(".todo-list");
+// todoList.insertAdjacentHTML("beforeend", "<li>Teach Students </li>");
+// todoList.insertAdjacentHTML("beforeend", "<li>learn JavaScript </li>");
 
 
 // when we click the button it shoe the  hello all

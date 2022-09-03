@@ -116,23 +116,23 @@
 // question 8: o.p based question
 
 
-const user = {
-    "first" : new Date(),
-    "second" : 2,
-    "third" : "test"
-}
+// const  animals = [
+//     {species: "lion", name:"king"},
+//     {species: "whale", name:"queen"},
+// ];
 
 
-function printAnimal(i){
-    this.print = function(){
-        console.log("$" + i + " " + this.species+ ": "+ this.name)
-    }
-    this.print()
-}
 
-for(let i =0; i<user.length; i++){
-    printAnimal.call(user[i], i)
-}
+// function printAnimal(i){
+//     this.print = function(){
+//         console.log("$" + i + " " + this.species+ ": "+ this.name)
+//     }
+//     this.print()
+// }
+
+// for(let i =0; i<user.length; i++){
+//     printAnimal.call(user[i], i)
+// }
 
 // Object.entries(user)
 // .forEach(([key, value]) => {
@@ -145,13 +145,115 @@ for(let i =0; i<user.length; i++){
 
 
 // add value of two array
-function sumArray(a, b) {
-    var c = [];
-    for (var i = 0; i < Math.max(a.length, b.length); i++) {
-      c.push((a[i] || 0) + (b[i] || 0));
-    }
-    return c;
-}
 
-console.log(sumArray([1, 2, 5,7],[1, 2])
-)
+// function sumArray(a, b) {
+//     var c = [];
+//     for (var i = 0; i < Math.max(a.length, b.length); i++) {
+//       c.push((a[i] || 0) + (b[i] || 0));
+//     }
+//     return c;
+// }
+
+// console.log(sumArray([1, 2, 5,7],[1, 2])
+// )
+
+
+
+
+
+
+// string to reverse
+
+// solution 1
+
+// 1.given string -convert into array
+// reverse in the array
+// turn the array back to string
+
+// const revstring = (str)=>{
+//         const arr = str.split("")
+//         arr.reverse()
+//         str = arr.join("")
+//         console.log(str)
+// }
+// revstring("Ram")
+
+
+// solution 2
+// given string -create empty string
+// loop through each charcter
+// return the reversed
+
+
+// (function(str){
+//     let reversed = ''
+//     for(let character of str)
+//     {
+//         reversed = character + reversed ;
+//     }
+//     console.log({reversed_value:reversed})
+// } )("Ram")
+
+
+
+//  find palindromes
+
+//  reverse the string
+// check with the original if they are same
+
+// const palindrome =  (str)=>{
+//     const ispalindrome = str.split('').reverse().join('')
+//     console.log(str===ispalindrome)
+// }
+// palindrome("Ram")
+
+
+ 
+
+
+
+
+
+// synchronous and asynchronous
+
+// synchronous code single thread 
+
+// console.log("Script start")
+
+// for(let i=0; i<10; i++){
+//     console.log(i)
+// }
+// console.log("script end")
+
+// asynchronous code
+
+// console.log("Script start")
+// setTimeout(()=>{
+//     console.log("inside settimeout")
+// },2000)
+// console.log("script end")
+
+//  setInterval every time is expired keep on running untill browase close
+
+// console.log("script start")
+// setInterval(()=>{
+//     console.log("inside setinterval")
+// },2000)
+// console.log("script end")
+
+const body = document.body
+const button =  document.querySelector("button")
+
+const k=setInterval(()=>{
+    const red = Math.floor(Math.random()*255)
+    const blue = Math.floor(Math.random()*255)
+    const green = Math.floor(Math.random()*255)
+    const rgb = `rgb${red},${blue},${green}`
+    body.style.background= rgb
+})
+
+button.addEventListener(()=>{
+    clearInterval(k)
+    button.textContext =  body.style.background
+})
+

@@ -4,14 +4,15 @@
 // xhr.open("GET",URL);
 
 // xhr.onreadystatechange = function(){
-// //     // console.log(xhr.readyState);
+// console.log(xhr.readyState);
 //    if(xhr.readyState === 4){
-//     //    console.log(xhr)
-//         // const response = xhr.response;
+//    console.log(xhr)
+// const response = xhr.response;
 //        const data = JSON.parse(xhr.response);
 //        console.log(data);
 //    }
 // }
+
 
 // xhr.onload = function(){
 
@@ -28,7 +29,7 @@
 // method 2:
 
 
-const URL = "https://jsonplaceholder.typicode.com/posts";
+// const URL = "https://jsonplaceholder.typicode.com/posts";
 // const xhr = new XMLHttpRequest();
 
 // xhr.open("GET",URL);
@@ -68,6 +69,7 @@ const URL = "https://jsonplaceholder.typicode.com/posts";
 
 // method 3 (using promise)
 
+// const URL = "https://jsonplaceholder.typicode.com/posts";
 // function getpromise(method, url){
 //     return new Promise((resolve, reject)=>{
 //         const xhr = new XMLHttpRequest();
