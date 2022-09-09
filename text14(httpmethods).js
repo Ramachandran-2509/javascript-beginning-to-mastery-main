@@ -13,34 +13,28 @@
 //    }
 // }
 
-
 // xhr.onload = function(){
 
 //     const data = JSON.parse(xhr.response);
 //     console.log(data);
 
-    
 // }
 
 // xhr.send()
 
-
-
 // method 2:
-
 
 // const URL = "https://jsonplaceholder.typicode.com/posts";
 // const xhr = new XMLHttpRequest();
 
 // xhr.open("GET",URL);
 
-
 // xhr.onload = function(){
 //     if(xhr.status >= 200 && xhr.status <300){
 //         const data = JSON.parse(xhr.response);
 //         console.log(data);
 //         const id = data[3].id
-        
+
 //         const xhr1 = new XMLHttpRequest();
 //         const URL2 = `${URL}/${id}`
 //         xhr1.open("GET", URL2)
@@ -64,9 +58,6 @@
 
 // xhr.send()
 
-
-
-
 // method 3 (using promise)
 
 // const URL = "https://jsonplaceholder.typicode.com/posts";
@@ -82,13 +73,11 @@
 //                 reject("something went wrong")
 //             }
 //         }
-//         xhr.send() 
+//         xhr.send()
 
-
-//         xhr.onerror=()=>{
+//         xhr.onerror = ()=>{
 //             console.log("network Error")
 //         }
-
 
 //     })
 // }
@@ -110,4 +99,79 @@
 //     console.log(data1)
 
 // }).catch(()=> console.log("Error"))
+
+
+
+// fetch
+
+// const URL = "https://jsonplaceholder.typicode.com/postss";
+
+// fetch(URL)
+//   .then((response) => {
+//     if (response.ok) {
+//       return response.json();
+//     } else {
+//       throw new Error("Something went wrong")
+//     }
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log("inside error catch");
+//     console.log(error);
+//   });
+
+
+
+  
+
+// async/Await method used 
+// method 1
+// const URL = "https://jsonplaceholder.typicode.com/posts";
+
+
+// async function getdata(){
+//     const response = await fetch(URL);
+//     const data  = await response.json()
+//     console.log(data)
+// }
+// getdata()
+
+
+// method 2 
+
+const URL = "https://jsonplaceholder.typicode.com/posts";
+
+
+// async function getdata(){
+//     const response = await fetch(URL);
+//     const data  = await response.json()
+//     return data
+// }
+
+// getdata().then((value)=>{
+//     console.log(value)
+// })
+
+
+// method 3 using arrow function
+
+// const getpost = async() =>{
+//     const response = await fetch(URL);
+//     if(!response.ok){
+//         throw new Error("Something went wrong")
+//     }
+//      const data  = await response.json()
+//      return data
+//  }  
+
+//  getpost().then((value)=>{
+//     console.log(value)
+// })
+
+
+
+
+
 

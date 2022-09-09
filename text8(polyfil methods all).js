@@ -141,3 +141,14 @@
 // },0)
 
 // console.log(result);
+
+
+
+
+//  setInterval every time is expired keep on running untill browase close
+
+// console.log("script start")
+// setInterval(()=>{
+//     console.log("inside setinterval")
+// },2000)
+// console.log("script end")

@@ -9,7 +9,7 @@
 //   console.log("function is doing task 2");
 // });
 
-function getTwoNumbersAndAdd(number1, number2, onSuccess,onFailure   ) {
+function getTwoNumbersAndAdd(number1, number2, onSuccess, onFailure   ) {
   if (typeof number1 === "number" && typeof number2 === "number") {
     onSuccess();
   } else {
