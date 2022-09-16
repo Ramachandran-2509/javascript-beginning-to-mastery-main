@@ -1,7 +1,4 @@
 
-
-
-
 // promise
 
 // const bucket = ["coffee", "chips", "salt", "vegetables", "rice"];
@@ -19,7 +16,7 @@
 
 // firedrice
 //   .then((value) => {
-//     console.log("eat",value);
+//     console.log("eat",   );
 //   })
 //   .catch(() => {
 //     console.log("error");
@@ -108,7 +105,21 @@
 //     })
 //  } 
 
-//  changeText(headimg1, "one", "red", 1000)
+// changeText(heading1, "one", "red", 1000)
+//   .then(()=>changeText(heading2, "two", "purple", 1000))
+//   .then(()=>changeText(heading3, "three", "green", 1000))
+//   .then(()=>changeText(heading4, "four", "orange", 1000))
+//   .then(()=>changeText(heading5, "five", "aqua", 1000))
+//   .then(()=>changeText(heading6, "six", "blue", 1000))
+//   .then(()=>changeText(heading7, "seven", "grey", 1000))
+//   .then(()=>changeText(heading8, "eight", "violet", 1000))
+//   .then(()=>changeText(heading9, "nine", "brown", 1000))
+//   .then(()=>changeText(heading10, "ten", "yellow", 1000))
+// .then(()=> document.write("Happy new year"))
+//    .catch((error)=>{
+//       alert(error);
+//   })
+
 
 
 // async/Await
@@ -116,6 +127,9 @@
 
 
 const URL = "https://jsonplaceholder.typicode.com/posts";
+
+
+
 
 
 async function getdata(){

@@ -140,7 +140,7 @@
 //     return num1 + num2
 // }
 
-// const arr = [1,2,];
+// const arr = [1,2];
 // console.log(add(...arr)); // spread operator 
 
 //  rest operator example

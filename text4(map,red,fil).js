@@ -116,17 +116,17 @@
 // q2: // map,filter and reduceO/PBased Questions
 // Question1 ;  return only name of student in captial
 
-let students=[
-    {name:"Piyush",rollNumber:31,marks:80},
-    {name:"Jenny",rollNumber:15,marks:69},
-    {name:"Kaushal",rollNumber:16,marks:35},
-    {name:"Dilpreet",rollNumber:7,marks:55},
-  ];
+// let students=[
+//     {name:"Piyush",rollNumber:31,marks:80},
+//     {name:"Jenny",rollNumber:15,marks:69},
+//     {name:"Kaushal",rollNumber:16,marks:35},
+//     {name:"Dilpreet",rollNumber:7,marks:55},
+//   ];
 
-    // const result = students.map((student)=>{
-    //     return student.name.toUpperCase();
-    // })
-    // console.log(result);
+//     const result = students.map((student)=>{
+//         return student.name.toUpperCase();
+//     })
+//     console.log(result);
 
 // question2 : return only details of those who scored more than 60
 
@@ -163,8 +163,9 @@ let students=[
 // console.log(result);
 
 
-// question 6 : return total marks of all students who scored more than 60..
-//              after 20 marks have been added to those who scored less than 60
+// question 6 :
+//  return total marks of all students who scored more than 60..
+//  after 20 marks have been added to those who scored less than 60
 
 
 // const result = students.map((student)=>{
@@ -200,7 +201,7 @@ let students=[
 
 // const result = users.reduce((acc, curr)=>{
 //     if(acc[curr.age]){
-//         acc[curr.age] = ++acc[curr.age]
+//         acc[curr.age] = acc[curr.age]++
 //     }
 //     else{
 //         acc[curr.age] = 1

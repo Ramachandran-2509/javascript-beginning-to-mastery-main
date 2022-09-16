@@ -8,7 +8,7 @@
 // }
 
 // function printfullname(qualification){
-//     return "Hello " + this.name+ " your age " + this.age + " and your qualification " + qualification
+//     return "Hello " + this.name + " your age " + this.age + " and your qualification " + qualification
 
 // }
 // console.log(printfullname.call(obj, "BCA"))

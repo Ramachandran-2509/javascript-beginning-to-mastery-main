@@ -2,6 +2,7 @@
 
 // call back is function another function take argument
 
+
 // function mycal1(number1, number2,callback){
 //     if(typeof number1 === "number" && typeof number2 ==="number"){
 //         callback(number1,number2)
@@ -12,9 +13,6 @@
 //     }
 
 // }
-
-
-
 
 
 // function add(num1, num2){
@@ -29,9 +27,12 @@
 
 
 
-// function getTwoNumbersAndAdd(number1, number2, onSuccess, onFailure   ) {
+// function getTwoNumbersAndAdd(number1, number2, callback, onSuccess, onFailure   ) {
 //     if (typeof number1 === "number" && typeof number2 === "number") {
-//       onSuccess();
+//       callback(number1, number2)
+//       if(onSuccess){
+//         onSuccess();
+//       } 
 //     } else {
 //       onFailure();
 //     }
@@ -50,7 +51,7 @@
 //       console.log("Wrong data type");
 //       console.log("please pass numbers only")
 //   }
-//   getTwoNumbersAndAdd(4, 4, onSuccess, onFail);
+//   getTwoNumbersAndAdd(4, 4, addTwoNumbers, onSuccess1, onFail);
   
 
 
@@ -102,7 +103,8 @@ const heading10 = document.querySelector(".heading10");
 // six        3s      blue
 // seven      1s      brown
  
-// callback hell  
+// callback hell
+
 // setTimeout(()=>{
 //   heading1.textContent = "one";
 //   heading1.style.color = "violet";
@@ -127,6 +129,9 @@ const heading10 = document.querySelector(".heading10");
 //   },2000)
   
 // },1000)
+
+
+
 
 function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
   setTimeout(()=>{
@@ -165,3 +170,5 @@ changeText(heading1, "one","violet",1000,()=>{
     },()=>{console.log("Heading3 does not exist")})
   },()=>{console.log("Heading2 does not exist")})
 },()=>{console.log("Heading1 does not exist")})
+
+

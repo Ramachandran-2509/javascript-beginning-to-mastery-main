@@ -20,7 +20,7 @@
 
 
 // question 1 : using delete method to delete property from object
-// the below code will delete method used it's wont work
+// the below code will delete method used it's won't work
 // because delete method is used for object but now 
 // we can declare the local variable that's why it  won't works
 
@@ -49,12 +49,17 @@
 
 // question 3 :  how to get keys  and value pairs in object
 
-// const user = {
+// const user = {    
 //     Name: "begginer programmer JS",
 //     age: "20",
 // };
 
 // if you want print both key and value pair
+
+
+// Object.entries(user).forEach(([key, value])=>{
+//     console.log(`${key}: ${value}`)
+// })
 
 // Object.entries(user)
 // .forEach(([key, value]) => {
@@ -80,6 +85,8 @@
 
 // loop through we can get key and value
 
+
+
 // for(key in user){
 //  console.log(key);
     //   console.log(user[key]);
@@ -87,6 +94,24 @@
 
 
 
+//  expect output 200,400, mynums
+
+//  let nums = {
+//   a: 100,
+//   b: 200,
+//   title: "My nums"
+// };
+
+// multiplybytwo(nums)
+
+// function multiplybytwo(obj){
+//     for(let key in obj){
+//         if(typeof obj[key] === "number"){
+//             obj[key] *= 2
+//         }
+//     }
+// }
+// console.log(nums)
 
 // question 9 : destructuring object
 
@@ -101,10 +126,13 @@
 
 // if you want chnange key name in destructuring object
 
+// localstorage
+// localStorage.setItem("test", user)
+
 // const Name =  "Roadside coder";
 // const { Name: Name1 } = user;
-// const { fullName: [firstName]} 
-// console.log(Name1);
+// const {fullName:{lastName}} = user 
+// console.log(lastName);
 
 // if you want to print name and age using destructuring
 

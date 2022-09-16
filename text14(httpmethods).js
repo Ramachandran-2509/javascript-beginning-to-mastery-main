@@ -1,4 +1,5 @@
 // const URL = "https://jsonplaceholder.typicode.com/posts";
+
 // const xhr = new XMLHttpRequest();
 
 // xhr.open("GET",URL);
@@ -22,6 +23,7 @@
 
 // xhr.send()
 
+
 // method 2:
 
 // const URL = "https://jsonplaceholder.typicode.com/posts";
@@ -33,6 +35,7 @@
 //     if(xhr.status >= 200 && xhr.status <300){
 //         const data = JSON.parse(xhr.response);
 //         console.log(data);
+        
 //         const id = data[3].id
 
 //         const xhr1 = new XMLHttpRequest();
@@ -61,6 +64,7 @@
 // method 3 (using promise)
 
 // const URL = "https://jsonplaceholder.typicode.com/posts";
+
 // function getpromise(method, url){
 //     return new Promise((resolve, reject)=>{
 //         const xhr = new XMLHttpRequest();
@@ -91,7 +95,7 @@
 // }).then((data)=>{
 //     const id= data[3].id;
 //     return id
-// }).then(id=>{
+// }).then((id)=>{
 //     const URL2 = `${URL}/${id}`
 //     return getpromise("GET", URL2)
 // }).then((newresponse)=>{
@@ -104,23 +108,23 @@
 
 // fetch
 
-// const URL = "https://jsonplaceholder.typicode.com/postss";
+const URL = "https://jsonplaceholder.typicode.com/posts";
 
-// fetch(URL)
-//   .then((response) => {
-//     if (response.ok) {
-//       return response.json();
-//     } else {
-//       throw new Error("Something went wrong")
-//     }
-//   })
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((error) => {
-//     console.log("inside error catch");
-//     console.log(error);
-//   });
+fetch(URL)
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("Something went wrong")
+    }
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log("inside error catch");
+    console.log(error);
+  });
 
 
 
@@ -139,9 +143,10 @@
 // getdata()
 
 
+
 // method 2 
 
-const URL = "https://jsonplaceholder.typicode.com/posts";
+// const URL = "https://jsonplaceholder.typicode.com/posts";
 
 
 // async function getdata(){
@@ -153,6 +158,7 @@ const URL = "https://jsonplaceholder.typicode.com/posts";
 // getdata().then((value)=>{
 //     console.log(value)
 // })
+
 
 
 // method 3 using arrow function
