@@ -41,9 +41,27 @@ function findTarget(array, target){
         if(array[i]===target){
             return i;
         }
+        
     }
-    return -1;
+    return("please provide correct number")
+    
 }
 const myArray = [1,3,8,90]
-const ans = findTarget(myArray, 8);
+const ans = findTarget(myArray, 90);
 console.log(ans);
+
+
+
+
+
+function findIndex(array, target){
+    for(let i=0; i<array.length; i++){
+        if(array[i]===target){
+            console.log(i)
+        }
+    }
+}
+const myArray1 = [1,3,8,90]
+findIndex(myArray,8)
+// const ans1 = findIndex(myArray, 8);
+// console.log(ans1)

@@ -9,6 +9,8 @@ const person = {
     age: 500
 }
 
+
+
 // function printDetails(obj){
 //     console.log(obj.firstName);
 //     console.log(obj.gender);

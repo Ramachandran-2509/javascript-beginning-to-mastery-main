@@ -1,15 +1,25 @@
 // object destructuring
-// const band = {
-//   bandName: "led zepplin",
-//   famousSong: "stairway to heaven",
-//   year: 1968,
-//   anotherFamousSong: "kashmir",
-// };
+const band = {
+  bandName: "led zepplin",
+  famousSong: "stairway to heaven",
+  year: 1968,
+  anotherFamousSong: "kashmir",
+};
 
-// let { bandName, famousSong, ...restProps } = band;
-// console.log(bandName);
-// console.log(famousSong);
-// console.log(restProps);
+
+band["age"]="26"
+band["hobbies"] = ['cricket', 'football', 'tennis']
+band["email"]= "svel936@gmail.com"
+
+console.log(band);
+let { bandName, famousSong, email, ...restProps } = band;
+// let { bandName:name} = band;
+
+
+console.log(bandName);
+console.log(famousSong);
+console.log(email);
+console.log(restProps);
 
 // const person = {
 //   name: "Ramachandran S",

@@ -6,35 +6,35 @@ const child = document.querySelector(".child");
 
 // capturing events
 
-// child.addEventListener(
-//   "click",
-//   () => {
-//     console.log("capture !!!! child");
-//   },
-//   true
-// );
-// parent.addEventListener(
-//   "click",
-//   () => {
-//     console.log("capture !!!! parent");
-//   },
-//   true
-// );
-// grandparent.addEventListener(
-//   "click",
-//   () => {
-//     console.log("capture !!!! grandparent");
-//   },
-//   true
-// );
+child.addEventListener(
+  "click",
+  () => {
+    console.log("capture !!!! child");
+  },
+  true
+);
+parent.addEventListener(
+  "click",
+  () => {
+    console.log("capture !!!! parent");
+  },
+  true
+);
+grandparent.addEventListener(
+  "click",
+  () => {
+    console.log("capture !!!! grandparent");
+  },
+  true
+);
 
-// document.body.addEventListener(
-//   "click",
-//   () => {
-//     console.log("capture !!!! document.body");
-//   },
-//   true
-// );
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("capture !!!! document.body");
+  },
+  true
+);
 
 
 // not capture

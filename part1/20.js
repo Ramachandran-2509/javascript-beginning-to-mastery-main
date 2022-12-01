@@ -11,8 +11,14 @@
 // console.log(`current value of i is ${i}`);
 // console.log("hello");
 
-let i = 0; 
+// let i = 0; 
+// while(i<=9){
+//     console.log(i + " " + "geeks");
+//     i++;
+// }
+
+let i=1;
 while(i<=9){
-    console.log(i + " " + "geeks");
+    console.log(i + " " +"geeks for geeks")
     i++;
 }

@@ -33,4 +33,5 @@ const user1 = createUser('harshit', 'vashsith', 'harshit@gmail.com', 18, "my add
 const user2 = createUser('harsh', 'vashsith', 'harshit@gmail.com', 19, "my address");
 const user3 = createUser('mohit', 'vashsitha', 'harshit@gmail.com', 17, "my address");
 console.log(user1);
+console.log(user3.about());
 console.log(user3.is18());

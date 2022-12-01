@@ -16,3 +16,15 @@ console.log(myNewArray);
 // const onemoreArray = ["item3", "item4"]
 // const myNewArray1 = [...mynum,...onemoreArray];
 // console.log(myNewArray1);
+
+
+
+
+// const rp= ["Ram", "anil", "arul", "mani"]
+
+
+// let[k1, k2, ...restarray]=rp
+// console.log("value of myvar1", k1);
+// console.log("value of myvar2", k2);
+// console.log(restarray);
+

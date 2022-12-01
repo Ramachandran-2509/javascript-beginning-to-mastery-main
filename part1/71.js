@@ -6,17 +6,17 @@ function personInfo(){
 }
 
 const person1 = {
-    firstName : "harsh",
+    firstName : "Ram",
     age: 8,
     about: personInfo
 }
 const person2 = {
-    firstName : "mohit",
+    firstName : "Mani",
     age: 18,
     about: personInfo
 }
 const person3 = {
-    firstName : "nitish",
+    firstName : "Munnabhai",
     age: 17,
     about: personInfo
 }

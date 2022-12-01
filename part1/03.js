@@ -1,4 +1,4 @@
-    // rules for naming variables 
+// rules for naming variables 
 
 // you cannot start with number 
 // example :- 

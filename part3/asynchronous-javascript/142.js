@@ -24,7 +24,7 @@ function sendRequest(method, url) {
 sendRequest("GET", URL)
     .then(response => {
         const data = JSON.parse(response);
-        // console.log(data)
+        console.log(data)
         return data;
     })
     .then(data=>{
@@ -42,3 +42,34 @@ sendRequest("GET", URL)
     .catch(error =>{
         console.log(error);
     })
+
+
+
+
+    function sum(a,b){
+        console.log(`Calculating the sum for ${a} and ${b}`)
+      return a+b;
+    }
+    
+    
+
+ function result(sum){
+  let cache = {}
+  
+  return function(a, b){
+   const key = a +' '+ b
+   console.log(key)
+  if(cache[key]){
+    // return cache[key]
+    console.log(cache[key])
+  }else{
+    cache[key] = sum(a,b)
+    return cache[key]
+  }
+  }
+ 
+} 
+
+
+    const res = result(sum)
+    console.log(res(1,2))

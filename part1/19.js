@@ -14,7 +14,7 @@
 // }else if(day ===3){
 //     console.log("Wednesday");
 // }else if(day ===4){
-//     console.log("Thrusday");
+//     console.log("Thursday");
 // }else if(day ===5){
 //     console.log("Friday");
 // }else if(day ===6){
@@ -40,7 +40,7 @@ switch(day){
         console.log("Wednesday");
         break;
     case 4:
-        console.log("Thrusday");
+        console.log("Thursday");
         break;
     case 5:
         console.log("Friday");

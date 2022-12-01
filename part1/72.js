@@ -1,5 +1,5 @@
 // console.log(window);
-// "use strict";
+ "use strict";
 function myFunc(){
     
     console.log(this);

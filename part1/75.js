@@ -8,4 +8,15 @@ const user1 = {
     }   
 }
 
-user1.about(user1);
+
+// const user2 = {
+//     firstName : "Ramachandran",
+//     age: 25,
+//     about(){
+//         console.log(this.firstName, this.age);
+//     }   
+// }
+
+
+
+user2.about();

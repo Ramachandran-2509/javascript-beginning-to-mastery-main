@@ -9,11 +9,18 @@
 //   console.log("function is doing task 2");
 // });
 
-function getTwoNumbersAndAdd(number1, number2, onSuccess, onFailure   ) {
+function getTwoNumbersAndAdd(number1, number2, addtwo, onSuccess, onFailure) {
   if (typeof number1 === "number" && typeof number2 === "number") {
-    onSuccess();
+    addtwo(number1,number2)
+    if(onSuccess){
+      onSuccess();
+    }
+    
   } else {
-    onFailure();
+    if(onFailure){
+      onFailure();
+    }
+    
   }
 }
 
@@ -30,6 +37,6 @@ function onFail(){
     console.log("Wrong data type");
     console.log("please pass numbers only")
 }
-getTwoNumbersAndAdd(4, 4, onSuccess, onFail);
+getTwoNumbersAndAdd(4, 4,addTwoNumbers, onSuccess1, onFail);
 
 

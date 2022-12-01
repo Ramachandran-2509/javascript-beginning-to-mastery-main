@@ -9,11 +9,19 @@ let fruits = ["apple", "mango", "grapes", "banana"];
 // console.log(fruits.length);
 // console.log(fruits[fruits.length-2]);
 let fruits2 = [];
+// let fruits3 = [];
 for(let i=0; i < fruits.length; i++){
     fruits2.push(fruits[i].toUpperCase());
 }
 
 console.log(fruits2); 
+
+
+// for(let j=0; j< fruits.length; j++){
+//     fruits3.push(fruits[j].toLowerCase());
+// }
+// console.log(fruits3); 
+
 
 // let i =0;
 // while(i<fruits.length){
@@ -35,3 +43,6 @@ for(let i=0; i<num.length; i++){
 
 } 
 console.log(result); // [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+
+
+

@@ -1,7 +1,7 @@
-// trim() 
+// trim()=>it's mainly used for remove extra space
 // toUpperCase()
 // toLowerCase()
-// slice()
+// slice()=> start and end
 
 let firstName = "harshit";
 
@@ -16,5 +16,5 @@ let firstName = "harshit";
 // start index 
 // end index
 
-let newString = firstName.slice(1); // hars
+let newString = firstName.slice(1, 4); // hars
 console.log(newString);

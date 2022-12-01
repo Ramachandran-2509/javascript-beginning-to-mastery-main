@@ -26,20 +26,21 @@
 
 // const myVar1 = "Ram";
 
-// function myApp1(){
+function myApp1(){
     
 
-//     function myFunc1(){
-//          const myVar1 = "sunshine";
-//         const myFunc3 = () =>{
-//             const myVar1 = "sun";
-//             console.log("inside myFunc", myVar1);
-//         }
-//         myFunc3();
-//     }
+    function myFunc1(){
+         const myVar1 = "sunshine";
+         console.log("inside myFunc1", myVar1);
+        const myFunc3 = () =>{
+            const myVar1 = "sun";
+            console.log("inside myFunc2", myVar1);
+        }
+        myFunc3();
+    }
 
-//     const myVar1 = "selvam";
-//     console.log(myVar1);
-//     myFunc1();
-// }
-// myApp1();
+    const myVar1 = "selvam";
+    console.log(myVar1);
+    myFunc1();
+}
+myApp1();

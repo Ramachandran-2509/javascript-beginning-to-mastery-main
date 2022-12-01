@@ -5,22 +5,22 @@
 // var is function scope 
 
 // if(true){
-//     var firstName = "harshit";
+//     let firstName = "Ram";
 //     console.log(firstName);
 // }
 
 // console.log(firstName);
 
-function myApp(){
-    if(true){
-        var firstName = "harshit";
-        console.log(firstName);
-    }
+// function myApp(){
+//     if(true){
+//         var firstName = "harshit";
+//         console.log(firstName);
+//     }
 
-    if(true){
-        console.log(firstName);
-    }
-    console.log(firstName);
-}
+//     if(true){
+//         console.log(firstName);
+//     }
+//     console.log(firstName);
+// }
 
-myApp();
+// myApp();

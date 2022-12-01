@@ -4,7 +4,7 @@ function ricePromise(){
   const bucket = ['coffee', 'chips','vegetables','salts','rice'];
   return new Promise((resolve,reject)=>{
     if(bucket.includes("vegetables")&& bucket.includes("salt") && bucket.includes("rice")){
-        resolve({value:"friedrice"});
+        resolve({value:"friedRice"});
     }else{
         reject("could not do it");
     }
@@ -14,8 +14,8 @@ function ricePromise(){
 
 ricePromise().then(
   // jab promise resolve hoga 
-  (myfriedRice)=>{
-  console.log("lets eat ", myfriedRice);
+  (myFriedRice)=>{
+  console.log("lets eat ", myFriedRice);
   }
   ).catch(
   (error)=>{

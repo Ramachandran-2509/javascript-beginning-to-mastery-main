@@ -8,7 +8,7 @@
 
 // const person = {name:"Harshit",age:22};
 const person = {
-    name: "harshit",
+    name: "Ram",
     age: 22,
     hobbies: ["guitar", "sleeping", "listening music"]
 }
@@ -22,3 +22,19 @@ console.log(person);
 // how to add key value pair to objects
 person["person"] = "male";  
 console.log(person); // 
+
+
+
+// const obj = {
+//     name:"Ram",
+//     age:"26",
+//     "person hobbies":["cricket", "football", "listening music"]
+
+// }
+
+// let key="mail"
+
+// obj["mail"]="svel@gmail.com"
+
+
+// console.log(obj["mail"])

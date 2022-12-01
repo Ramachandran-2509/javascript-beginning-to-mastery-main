@@ -32,6 +32,13 @@
 
 
 
+// const arr=[1,2,3,5]
+
+// const result= arr.myMap((num)=>{
+// 	return num * 2
+// })
+// console.log(result)
+
 
 
 
@@ -45,9 +52,9 @@
 //     return temp;
 // }
 
-// const arr = [1,2,3,4,5,6,7,8,9,10];
+// const arr = [1,2,3,4];
 
-//  const newArr = arr.mymap((num)=>{
+//  const newArr = arr.myMap((num)=>{
 //      return num * 2
 // })
 // console.log(newArr);
@@ -87,6 +94,7 @@
 // }
 
 
+
 //  const arr = [1,2,9,6]
 
 // const result = arr.myreduce((acc, curr)=>{
@@ -116,13 +124,7 @@
 // q2: // map,filter and reduceO/PBased Questions
 // Question1 ;  return only name of student in captial
 
-// let students=[
-//     {name:"Piyush",rollNumber:31,marks:80},
-//     {name:"Jenny",rollNumber:15,marks:69},
-//     {name:"Kaushal",rollNumber:16,marks:35},
-//     {name:"Dilpreet",rollNumber:7,marks:55},
-//   ];
-
+ 
 //     const result = students.map((student)=>{
 //         return student.name.toUpperCase();
 //     })
@@ -180,7 +182,6 @@
 // },0)
       
 // console.log(result);
-
 
 
 

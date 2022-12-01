@@ -25,3 +25,6 @@
 //     return accumulator + currentValue;
 // }, 0);
 // console.log(sum);
+
+
+// function declaration:

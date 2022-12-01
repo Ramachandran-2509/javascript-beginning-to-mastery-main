@@ -20,7 +20,7 @@
 
 // question 3 : o.p based question
 
-// const res = ["jacket", "t=shirt"]
+// const res = ["jacket", "t-shirt"]
 // res.length = 0
 // res[0]
 // console.log(res); // []

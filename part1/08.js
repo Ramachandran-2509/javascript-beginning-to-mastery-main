@@ -1,5 +1,7 @@
 // typeof operator 
 
+
+
 // data types (primitive data types)
 // string "harhit"
 // number 2, 4, 5.6 
@@ -16,8 +18,9 @@
 
 // // 22 -> "22"
 // // // convert number to string. 
+// console.log(age, typeof(age))
 // age = age + "";
-// console.log(typeof(age)); "22" 
+// console.log(age, typeof(age)); "22" 
 
 
 // // convert string to number. 
@@ -26,8 +29,8 @@
 // console.log(typeof myStr);
 
 
-// let age = "18";
-// age = Number(age);
-// console.log(typeof age);
+// let age1 = "18";
+// age1 = Number(age1);
+// console.log(typeof age1);
 
 

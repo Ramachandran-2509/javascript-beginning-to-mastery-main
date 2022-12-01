@@ -108,23 +108,23 @@
 
 // fetch
 
-const URL = "https://jsonplaceholder.typicode.com/posts";
+// const URL = "https://jsonplaceholder.typicode.com/posts";
 
-fetch(URL)
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error("Something went wrong")
-    }
-  })
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.log("inside error catch");
-    console.log(error);
-  });
+// fetch(URL)
+//   .then((response) => {
+//     if (response.ok) {
+//       return response.json();
+//     } else {
+//       throw new Error("Something went wrong")
+//     }
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log("inside error catch");
+//     console.log(error);
+//   });
 
 
 
@@ -132,6 +132,7 @@ fetch(URL)
 
 // async/Await method used 
 // method 1
+
 // const URL = "https://jsonplaceholder.typicode.com/posts";
 
 
@@ -146,7 +147,7 @@ fetch(URL)
 
 // method 2 
 
-// const URL = "https://jsonplaceholder.typicode.com/posts";
+const URL = "https://jsonplaceholder.typicode.com/postss";
 
 
 // async function getdata(){
@@ -158,8 +159,6 @@ fetch(URL)
 // getdata().then((value)=>{
 //     console.log(value)
 // })
-
-
 
 // method 3 using arrow function
 
@@ -174,6 +173,8 @@ fetch(URL)
 
 //  getpost().then((value)=>{
 //     console.log(value)
+// }).catch((er)=>{
+//     console.log(er)
 // })
 
 

@@ -4,11 +4,10 @@ const person = {
     name: "harshit",
     age: 22,
     "person hobbies": ["guitar", "sleeping", "listening music"],
-    "asddress": {
+    "address": {
         city: "chennai",
-        state: "tamilnadu",
+        state: "Tamilnadu",
         country: "india",
-
         pincode: "600089",
         "address line 1": "49/23 jeeva nagar",
         "address line 2": "second line",
@@ -17,7 +16,7 @@ const person = {
 
 }
 
-console.log(person.asddress["address line 1"]);
+console.log(person.address["address line 1"]);
 console.log(person["person hobbies"]);
-person[key] = "Ramachandran@gmail.com";
+person["key"] = "Ramachandran@gmail.com";
 console.log(person);  // {name: "harshit", age: 22, "person hobbies": Array(3), email: "
