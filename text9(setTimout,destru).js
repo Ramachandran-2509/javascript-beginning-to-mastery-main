@@ -55,4 +55,4 @@ function fullURL({domain, page, pagenumber}){
    
   
   // console.log(fullURL(k))
-  // console.log(fullURL(google))
+  console.log(fullURL(google))

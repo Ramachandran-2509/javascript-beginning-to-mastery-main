@@ -1,6 +1,6 @@
 // closure is a technique to create a function
 // that has access to the variables and parameters
-// of the outer function,
+// of the outer function,  
 
 // function outer(){
 //     var a = 10;
@@ -8,6 +8,7 @@
 //         var b = 10
 //         console.log(a+b);
 //     }
+    
 //     return inner;
 // }
 // var inner = outer();
@@ -45,17 +46,17 @@
 // question 2 : what a function that would allow you to do this
 
 // function createBase(num){
-//     return function(innernumber){
-//         console.log(innernumber+num);
+//     return function(innerNumber){
+//         console.log(innerNumber+num);
 //     }
 // }
     
-// var addsix =  createBase(6);
-// addsix(10); // 16
-// addsix(21); // 27
+// var AddSix =  createBase(6);
+// AddSix(10); // 16
+// AddSix(21); // 27
 
 // Round 2
-// question 1 : time optimzation
+// question 1 : time optimization
 
 // function find(index){
 //     let a = []
@@ -124,7 +125,7 @@
 //     setTimeout(function log(){
 //         console.log(i);
 //     } , i * 1000)
-//     }
+//  }
 //     x(i);
 // }
 
@@ -179,7 +180,7 @@
 
 // let view;
 
-// function Likethisvideo(){
+// function LikeThisVideo(){
 //     let count= 0;
 
 //     return function (){
@@ -195,7 +196,7 @@
     
 // }
 
-// const k = Likethisvideo();
+// const k = LikeThisVideo();
 // k();
 // k();
 // k();
@@ -235,5 +236,3 @@
 
 // scope is the area of a program 
 // where variables can be defined
-
-

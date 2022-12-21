@@ -1,19 +1,19 @@
-// call,apply,bind method functions 
+// call,apply,bind method functions (explicit Binding)
 
 // let obj = {
-//     name : "Ramachandran",
-//     age : 24
+//     name : "Rama",
+//     age : 26
     
 
 // }
 
-// function printfullname(qualification){
-//     return "Hello " + this.name + " your age " + this.age + " and your qualification " + qualification
+// function printFullName(qualification, profession){
+//     return "Hello " + this.name + " your age " + this.age + " and your qualification " + qualification + " and your profession " + profession
 
 // }
-// console.log(printfullname.call(obj, "BCA"))
-// console.log(printfullname.apply(obj, ["BCA"]))
-// const res =  printfullname.bind(obj, "BCA")
+// console.log(printFullName.call(obj, "BCA", "ReactJs Developer"))
+// console.log(printFullName.apply(obj, ["BCA", "ReactJs Developer"]))
+// const res =  printFullName.bind(obj, "BCA", "ReactJs Developer")
 // console.log(res())
 
 
@@ -22,14 +22,15 @@
 // question 1 : o.p based question
 
 // const person = {
-//     name: "Ram"
+//     name: "Ram",
+//     age:26
 // }
 
-// function say(age){
-//     return `${this.name} is ${this.age}`
+// function say(profession){
+//     return `${this.name} is ${this.age}, and ${profession}`
 // }
-// console.log(say.call(person, 24))
-// console.log(say.bind(person, 24))
+// console.log(say.call(person, "Developer"))
+// console.log(say.bind(person, "Developer"))
 
 
 
@@ -48,7 +49,23 @@
 // };
 
 // var person2 = { age:24 };
+// console.log(person.getAge())
 // console.log(person.getAge.call(person2));
+
+// var status = '😎';
+
+// setTimeout(()=>{
+//   const status = '😍';
+
+//   const data = {
+//     status: '🥑',
+//     getStatus() {
+//       return this.status;
+//     },
+//   };
+//   console.log(data.getStatus()); 
+//   console.log(data.getStatus.call(this)); 
+// }, 0);
 
 
 // question 3 : o.p based question
@@ -69,7 +86,7 @@
 // }
 
 // for(let i =0; i<animals.length; i++){
-//     printAnimal.call(animals[i], i)
+//     printAnimal.call(animals[i],i)
 // }
 
 
@@ -94,7 +111,7 @@
 // }
     
 
-// console.log(sumArray([1, 2, 5,7, 90],[1, 2, 8, 9], [7, 9])
+// console.log(sumArray([1, 2, 5, 7, 90],[1, 2, 8, 9], [7, 9])
 // )
 
 
@@ -103,7 +120,12 @@
 
 // loop based algorithm
 
-// const numbers = [5, 6, 2, 3, 7]
+//  const numbers = [5, 6, 1, 3, 7]
+
+//  console.log(Math.max.apply(null,numbers))
+//  console.log(Math.min.apply(null,numbers))
+
+
 
 
 // const res  = numbers.reduce((max, curr)=>{
@@ -136,7 +158,7 @@
 // question 8 : bind chaining
 
 
-// function checkpassword(success, failed){
+// function checkPassword(success, failed){
 //     let password = prompt("password?", "")
 //     if(password =="Roadside") success();
 //     else failed()
@@ -145,22 +167,24 @@
 // const user =  {
 //     name : "Ram",
 
-//     loginsuccessfull(){
+//     loginSuccessful(){
 //         console.log(`${this.name} logged in`)
 //     },
     
-//     loginfailed(){
+//     loginFailed(){
 //         console.log(`${this.name} fail to login`)
 //     },
 // };
 
-// checkpassword(user.loginsuccessfull.bind(user), user.loginfailed.bind(user))
+// checkPassword(user.loginSuccessful().bind(user))
+
+// checkPassword(user.loginSuccessful.bind(user), user.loginFailed.bind(user))
 
 
 
 // question 9 ; o/ p based question
 
-// function checkpassword(ok, fail){
+// function checkPassword(ok, fail){
 //     let password = prompt("password?", "")
 //     if(password =="Roadside") ok();
 //     else fail()
@@ -170,10 +194,10 @@
 //     name : "Ram",
 
 //     login(result){
-//         console.log(this.name + (result ? " login successfull" : " login failed"))
+//         console.log(this.name + (result ? " login SuccessFull" : " login failed"))
 //     }
 // };
-// checkpassword(user.login.bind(user, true), user.login.bind(user, false))
+// checkPassword(user.login.bind(user, true), user.login.bind(user, false))
 
 
 
@@ -181,20 +205,21 @@
 // question 10 :  Explicit Bind with arrow function
 
 // arrow function this keyed it's represent window  not local object.
-// it's majotr different in arrow function
+// it's major different in arrow function
 
 // const age = 58;
 
 // const person = {
 //     name : "Ram",
 //     age: 25,
-//     getArrow : ()=>console.log(this.age),
+//     getArrow : ()=> console.log(this.age),
 //     getAge: function() {
 //         console.log(this.age)
 //     }
 // }
 
 // var person2 = { age: 24}
+
 // person.getArrow.call(person2)
 // person.getAge.call(person2)
 

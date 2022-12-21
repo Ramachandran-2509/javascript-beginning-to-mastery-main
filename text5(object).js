@@ -4,6 +4,7 @@
 // const user = {
 //     Name: "begginer programmer JS",
 //     age: "20",
+//     profession:"Junior React Developer"
 // };
 
 
@@ -64,6 +65,7 @@
 // Object.entries(user)
 // .forEach(([key, value]) => {
 //     console.log(`${key}: ${value}`);
+//     console.log(key.toUpperCase() ,":", value)
 // })
 
 
@@ -71,7 +73,8 @@
 
 // Object.keys(user)
 // .forEach((key) => {
-//     console.log(key);
+//     console.log(key)
+//     console.log(key.toUpperCase());
 // })
 
 // if you want print individual value
@@ -130,9 +133,11 @@
 // localStorage.setItem("test", user)
 
 // const Name =  "Roadside coder";
-// const { Name: Name1 } = user;
-// const {fullName:{lastName}} = user 
-// console.log(lastName);
+// const {Name:Name1} = user;
+// console.log(Name)
+// console.log(user.Name)
+// const {fullName:{lastName,firstName}} = user 
+// console.log(lastName,firstName);
 
 // if you want to print name and age using destructuring
 
@@ -149,8 +154,8 @@
 
 // question 10 : o/p based questions
 
-// function getItems(fruitList, favourefruit,...args){
-//     return[...fruitList, ...args, favourefruit];
+// function getItems(fruitList, favouRiteFruit,...args){
+//     return[...fruitList,...args,favouRiteFruit]
 
 
 // }
@@ -160,7 +165,7 @@
 
 
 // question 11 : o/ p based questions
-
+ 
 // let c  =  {greeting : "hey"};
 // let d;
 
@@ -206,7 +211,7 @@
 //     person.age = 20;
 
 //     person = {
-//         name: "Ramachandran",
+//         name: "Ramachandran s",
 //         age: 25,
 //     }
 
@@ -240,6 +245,7 @@
 //     const person2 = person;
 //     person.age = 20;
 //     console.log(person);
+//     console.log(person2)
 
 
 // deep copy : copy the value of the object and create new object 
@@ -253,8 +259,9 @@
 // }
 
 //     const person3 = {...person1};
-//     person.age = 20;
-//     console.log(person);
+//     person1.age = 20;
+//     console.log(person1);
+//     console.log(person3)
 
 
 
@@ -272,7 +279,7 @@
 // const objectclone3 = {...person1};
 
 
-// console.log(objectclone);
+// console.log(objectclone3);
 
 
 // const user = {
@@ -288,5 +295,108 @@
 
 // Object.entries(user)
 // .forEach(([key, value]) => {
-//     console.log(`${key}: ${value}`);
+//     if(user[key]==="third"){
+//         console.log(value);    
+//     }
+// console.log(`${key}: ${value}`);
 // })
+// const arr=[1,2,3,0,0,4,5,0]
+// const zero= 0
+
+// const res= [arr.filter((el)=>el!==zero), arr.filter(el=> el==zero)].flat();
+// console.log(res)
+
+
+// q 10
+
+// Creating objects
+
+
+// Fours ways of creating an object in JavaScript 
+
+
+// 1. object as a literal
+
+var car = {
+    model: 'bmw',
+    color: 'red',
+    price: 2000,
+    engine : {
+    	type :'petrol',
+    	power : 120
+    }
+}
+
+car.owner = 'foo';
+
+
+Object.defineProperty(car, "yearmade", {
+    writable: true,
+    enumerable: true,
+    configurable: false,
+    value: 1984
+});
+
+console.log(JSON.stringify(car));
+
+// 2. using the new operator a.k.s Constructor Invocation Pattern
+
+
+ 
+function Car(model, color) {
+    this.model = model;
+    this.color = color;
+    Object.defineProperty(this, "yearMade", {
+    writable: true,
+    enumerable: true,
+    configurable: false,
+    value: 1984
+});
+
+}
+
+console.log(Car.prototype);
+
+var c1 = new Car('BMW','Red');
+var c2 = new Car('Audi','Black');
+console.log(c1.yearMade);
+
+// 3 using the Object.create() method 
+
+//it allows you to create an object from an existing object 
+
+var Car1 = {
+    model: 'BMW',
+    color: 'red'
+}
+
+var ElectricCar = Object.create(Car1,{ym:{
+	writable: true,
+    enumerable: true,
+    configurable: false,
+    value: 1984
+}});
+
+     // BMW
+
+
+// 4 using the class starting  ES6 
+
+
+class Car3 {
+ 
+    constructor(maker, price) {
+        this.maker = maker;
+        this.price = price;
+    }
+ 
+    getInfo() {
+        console.log(this.maker + " costs : " + this.price);
+    }
+}
+
+var carobj1 = new Car3('BMW',2000);
+carobj1.getInfo();
+
+
+

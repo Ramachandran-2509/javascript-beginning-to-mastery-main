@@ -3,7 +3,7 @@
 // call back is function another function take argument
 
 
-// function mycal1(number1, number2,callback){
+// function myCal1(number1, number2,callback){
 //     if(typeof number1 === "number" && typeof number2 ==="number"){
 //         callback(number1,number2)
 //     }
@@ -23,35 +23,35 @@
 //     console.log(num1*num2)
 // }
 
-// mycal1(5,4,add)
+// myCal1(5,4,add)
 
 
 
-// function getTwoNumbersAndAdd(number1, number2, callback, onSuccess, onFailure   ) {
-//     if (typeof number1 === "number" && typeof number2 === "number") {
-//       callback(number1, number2)
-//       if(onSuccess){
-//         onSuccess();
-//       } 
-//     } else {
-//       onFailure();
-//     }
-//   }
+function getTwoNumbersAndAdd(number1, number2, callback, onSuccess, onFailure ) {
+    if (typeof number1 === "number" && typeof number2 === "number") {
+      callback(number1, number2)
+      if(onSuccess){
+        onSuccess();
+      } 
+    } else {
+      onFailure();
+    }
+  }
   
-//   function addTwoNumbers(num1, num2) {
-//     console.log(num1 + num2);
-//   }
+  function addTwoNumbers(num1, num2) {
+    console.log(num1 + num2);
+  }
   
-//   function onSuccess1(){
-//       console.log("Success");
-//   }
+  function onSuccess1(){
+      console.log("Success");
+  }
   
   
-//   function onFail(){
-//       console.log("Wrong data type");
-//       console.log("please pass numbers only")
-//   }
-//   getTwoNumbersAndAdd(4, 4, addTwoNumbers, onSuccess1, onFail);
+  function onFail(){
+      console.log("Wrong data type");
+      console.log("please pass numbers only")
+  }
+  getTwoNumbersAndAdd("4", 4, addTwoNumbers, onSuccess1, onFail);
   
 
 
@@ -91,7 +91,7 @@ const heading6 = document.querySelector(".heading6");
 const heading7 = document.querySelector(".heading7");
 const heading8 = document.querySelector(".heading8");
 const heading9 = document.querySelector(".heading9");
-const heading10 = document.querySelector(".heading10");
+const heading10= document.querySelector(".heading10");
 
 // Text       Delay   Color
 

@@ -2,21 +2,21 @@
 // promise
 
 // const bucket = ["coffee", "chips", "salt", "vegetables", "rice"];
-// const firedrice = new Promise((resolve, reject) => {
+// const firedRice = new Promise((resolve, reject) => {
 //   if (
 //     bucket.includes("vegetables") &&
 //     bucket.includes("salt") &&
 //     bucket.includes("rice")
 //   ) {
-//     resolve( "friedrice" );
+//     resolve( "friedRice" );
 //   } else {
 //     reject(new Error("Something went wrong"));
 //   }
 // });
 
-// firedrice
+// firedRice
 //   .then((value) => {
-//     console.log("eat",   );
+//     console.log("eat",value);
 //   })
 //   .catch(() => {
 //     console.log("error");
@@ -36,7 +36,7 @@
 //             bucket.includes("salt") &&
 //             bucket.includes("rice")
 //           ) {
-//             resolve( "friedrice" );
+//             resolve( "friedRice" );
 //           } else {
 //             reject(new Error("Something went wrong"));
 //           }
@@ -66,7 +66,7 @@
 // function using setTimeout
 
 //   function friedRicePromise(){
-//     const bucket = ["coffee", "chips", "salt", "vegetables", "rice"];
+//   const bucket = ["coffee", "chips", "salt", "vegetables", "rice"];
 //     return new Promise((resolve, reject)=>{
 //         const value= false;
 //         setTimeout(()=>{

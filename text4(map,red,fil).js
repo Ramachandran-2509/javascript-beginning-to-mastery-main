@@ -13,10 +13,10 @@
 
 // const arr = [1,2,3,4,5,6,7,8,9,10];
 
-// const morethan3 = arr.filter((num)=>{
+// const moreThan3 = arr.filter((num)=>{
 //     return num > 3
 // })
-// console.log(morethan3);
+// console.log(moreThan3);
 
 
 // reduce
@@ -42,9 +42,9 @@
 
 
 
-// folyfill for map
+// polyFill for map
 
-// Array.prototype.mymap = function(cb){
+// Array.prototype.myMap = function(cb){
 //     let temp = [];
 //     for(let i = 0; i < this.length; i++){
 //         temp.push(cb(this[i], i, this));
@@ -60,10 +60,10 @@
 // console.log(newArr);
 
 
-// folyfill for filter
+// polyFill for filter
 
 
-// Array.prototype.myfilter = function(cb){
+// Array.prototype.myFilter = function(cb){
 //     let temp = [];
 //     for(let i = 0; i < this.length; i++){
 //         if(cb(this[i], i, this)){
@@ -75,16 +75,16 @@
 
 // const arr = [1,2,3,4,5,6,7,8,9,10];
 
-//  const morethan3 = arr.myfilter((num)=>{
+//  const moreThan3 = arr.myFilter((num)=>{
 //     return num > 3
 // })
-// console.log(morethan3);
+// console.log(moreThan3);
 
 
-// folyfill for Reduce
+// polyFill for Reduce
 
-// Array.prototype.myreduce = function(cb, initialvalue){
-//     var accumulator = initialvalue;
+// Array.prototype.myReduce = function(cb, initialValue){
+//     var accumulator = initialValue;
 //     for(let i=0; i<this.length; i++){
 //         accumulator = accumulator ? cb(accumulator, this[i], i ,this) : this[i];
 //     }
@@ -97,7 +97,7 @@
 
 //  const arr = [1,2,9,6]
 
-// const result = arr.myreduce((acc, curr)=>{
+// const result = arr.myReduce((acc, curr)=>{
 //     return acc + curr
 // },0)
 
@@ -109,15 +109,15 @@
 
 // const arr = [1,3,6,7]
 
-// const resultmap = arr.map((num)=>{
+// const resultMap = arr.map((num)=>{
 //     return num * 2
 // })
 
-// const resultforeach = arr.forEach((num, i)=>{
+// const resultForeach = arr.forEach((num, i)=>{
 //     arr[i] =  num + 2
 // })
 
-// console.log(resultmap, resultforeach, arr);
+// console.log(resultMap, resultForeach, arr);
 
 
 
@@ -202,7 +202,7 @@
 
 // const result = users.reduce((acc, curr)=>{
 //     if(acc[curr.age]){
-//         acc[curr.age] = acc[curr.age]++
+//         acc[curr.age] += acc[curr.age]
 //     }
 //     else{
 //         acc[curr.age] = 1
@@ -216,13 +216,13 @@
 
 // question 2 : those whose age less than 20 and  get users firstname only
 
-// const result = users .filter((user)=>{
-//     return user.age < 20
-// }).map((users)=>{
-//     return users.firstname
-// })
-// console.log(result);
-
+const result = users .filter((user)=>{
+    return user.age < 20
+}).map((users)=>{
+    return users.firstname
+})
+console.log(result);
+  
 // // using reduce
 
 // const resullt = users.reduce((acc, curr)=>{

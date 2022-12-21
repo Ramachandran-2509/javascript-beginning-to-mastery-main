@@ -61,11 +61,13 @@
 
 // xhr.send()
 
+
+
 // method 3 (using promise)
 
 // const URL = "https://jsonplaceholder.typicode.com/posts";
 
-// function getpromise(method, url){
+// function getPromise(method, url){
 //     return new Promise((resolve, reject)=>{
 //         const xhr = new XMLHttpRequest();
 //         xhr.open(method, url);
@@ -86,7 +88,7 @@
 //     })
 // }
 
-// getpromise("GET", URL)
+// getPromise("GET", URL)
 // .then((response)=>{
 //         const data = JSON.parse(response);
 //         console.log(data)
@@ -97,9 +99,9 @@
 //     return id
 // }).then((id)=>{
 //     const URL2 = `${URL}/${id}`
-//     return getpromise("GET", URL2)
-// }).then((newresponse)=>{
-//     const data1 = JSON.parse(newresponse);
+//     return getPromise("GET", URL2)
+// }).then((newResponse)=>{
+//     const data1 = JSON.parse(newResponse);
 //     console.log(data1)
 
 // }).catch(()=> console.log("Error"))
@@ -109,6 +111,10 @@
 // fetch
 
 // const URL = "https://jsonplaceholder.typicode.com/posts";
+
+
+// const k = fetch(URL)
+// console.log(k)
 
 // fetch(URL)
 //   .then((response) => {
@@ -136,33 +142,33 @@
 // const URL = "https://jsonplaceholder.typicode.com/posts";
 
 
-// async function getdata(){
+// async function getData(){
 //     const response = await fetch(URL);
 //     const data  = await response.json()
 //     console.log(data)
 // }
-// getdata()
+// getData()
 
 
 
 // method 2 
 
-const URL = "https://jsonplaceholder.typicode.com/postss";
+// const URL = "https://jsonplaceholder.typicode.com/postss";
 
 
-// async function getdata(){
+// async function getData(){
 //     const response = await fetch(URL);
 //     const data  = await response.json()
 //     return data
 // }
 
-// getdata().then((value)=>{
+// getData().then((value)=>{
 //     console.log(value)
 // })
 
 // method 3 using arrow function
 
-// const getpost = async() =>{
+// const getPost = async() =>{
 //     const response = await fetch(URL);
 //     if(!response.ok){
 //         throw new Error("Something went wrong")
@@ -171,7 +177,7 @@ const URL = "https://jsonplaceholder.typicode.com/postss";
 //      return data
 //  }  
 
-//  getpost().then((value)=>{
+//  getPost().then((value)=>{
 //     console.log(value)
 // }).catch((er)=>{
 //     console.log(er)
@@ -179,6 +185,13 @@ const URL = "https://jsonplaceholder.typicode.com/postss";
 
 
 
+// What is arrow function in Javascript
 
+// arrow function introduce in ES6 in javascript
+// arrow function some major difference between from normal function
+// first one 
+
+
+//
 
 

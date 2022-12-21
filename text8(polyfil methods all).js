@@ -1,72 +1,72 @@
 // polyfill for all the methods
 
 
-    // let car1 = {
-    //     color : "red",
-    //     company: "ferrari"
-    // }
+    let car1 = {
+        color : "red",
+        company: "ferrari"
+    }
 
-    // function purchasecar(currency, price){
-    //     console.log(`I have purchased ${this.company}  ${this.color} car for ${currency} ${price} `)
-    // }
+    function purChaseCar(currency, price){
+        console.log(`I have purchased ${this.company}  ${this.color} car for ${currency} ${price} `)
+    }
 
-// purchasecar.call(car1, "£", 50000000)
+// purChaseCar.call(car1, "£", 50000000)
 
 
-// polyfil for call methods
+// polyfills for call methods
 
-// Function.Prototype.myCall = function(context={}, ...args){
-//     if(typeof this !== "function"){
-//         throw new Error(this + "Something went wrong")
-//     }
+Function.Prototype.myCall = function(context={}, ...args){
+    if(typeof this !== "function"){
+        throw new Error(this + "It's not callable");
+    }
     
-//     context.fn = this;
-//     context.fn(...args)
-// }
-//  purchasecar.myCall(car1, "£", 50000000)
-// purchasecar.call(car1, "£", 50000000)
+    context.fn = this;
+    context.fn(...args);
+};
+purChaseCar.myCall(car1, "£", 50000000)
+// purChaseCar.call(car1, "£", 50000000)
 
 
 
 // apply method using polyfill
 
 
-// Function.Prototype.myApply = function(context={}, args=[]){
+// Function.Prototype.myapply = function(context={}, args=[]){
 //     if(typeof this !== "function"){
 //         throw new Error(this + "Something went wrong")
 //     }
 //     if(!Array.isArray(args)){
-//         throw new Error("Createlist called on non-objec")
+//         throw new Error("createList called on non-object")
 //     }
     
 //     context.fn = this;
 //     context.fn(...args)
 // }
  
-// purchasecar.myApply(car1, "£", 50000000)
+// purChaseCar.myapply(car1, "£", 50000000)
 
 
 
 // bind methods for polyfill
 
 
-// Function.Prototype.mybind = function(context={}, ...args){
+// Function.Prototype.myBind = function(context={}, ...args){
 //     if(typeof this !== "function"){
 //         throw new Error(this + "Something went wrong")
 //     }
     
     
 //     context.fn = this;
-//     return function(...newargs){
-//         return context.fn(...args,...newargs)
+//     return function(...newArgs){
+//         return context.fn(...args,...newArgs)
     
 //     }
     
 
 // }
  
-// const newfunc= purchasecar.mybind(car1, "£")
-// console.log(newfunc(5000000))
+// const newFunc= purChaseCar.myBind(car1, "£")
+// console.log(newFunc(5000000))
 
 
 
@@ -121,10 +121,10 @@
 
 
 
-// folyfill for Reduce
+// polyfill for Reduce
 
-// Array.prototype.myreduce = function(cb, initialvalue){
-//     var accumulator = initialvalue;
+// Array.prototype.myReduce = function(cb, initialValue){
+//     var accumulator = initialValue;
 //     for(let i=0; i<this.length; i++){
 //         accumulator = accumulator ? cb(accumulator, this[i], i ,this) : this[i];
 //     }
@@ -136,7 +136,7 @@
 
 //  const arr = [1,2,9,6]
 
-// const result = arr.myreduce((acc, curr)=>{
+// const result = arr.myReduce((acc, curr)=>{
 //     return acc + curr
 // },0)
 

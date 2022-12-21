@@ -28,15 +28,17 @@
 // function sum(a) {
 //   return function (b) {
 //     return function (c) {
-// outer functions scope
+// // outer functions scope
 //       return function (d) {
-// local scope
+// // local scope
 //         return a + b + c + d + e;
 //       };
 //     };
 //   };
 // }
 
+
+// console.log(sum(2)(20)(8)(9))
 // example2 : currying function
 
 //  question 1 - sum(2)(6)(1)
@@ -63,7 +65,7 @@
 //       if (operation === "sum") return a + b;
 //       else if (operation === "multiply") return a * b;
 //       else if (operation === "divide") return a / b;
-//       else if (operation === "substract") return a / b;
+//       else if (operation === "subsTract") return a - b;
 //       else return " Invalid Operation ";
 //     };
 //   };
@@ -83,6 +85,9 @@
 // }
 
 // console.log(add(4)(2)(8)());
+
+
+
 
 // function curry(func){
 //     return function curriedFunc(...args){

@@ -1,6 +1,6 @@
 
 
-          // it's full of queryselector methods 
+          // it's full of querySelector methods 
 
 
 
@@ -16,7 +16,7 @@
 // console.log(heading);
 // }
 
-// when we target the particular a tahe using querySelector 
+// when we target the particular a the using querySelector 
 // we can use getAttribute method to get the href attribute.
 
 // const headings1 = document.querySelector('a');

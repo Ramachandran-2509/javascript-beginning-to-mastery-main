@@ -1,7 +1,7 @@
 // 
 // function all basic level and advanced level questions in interview
 
-
+// /ECMAScript specifies the way of working of the general-purpose programming language, JavaScript.
 //  q1: what is function declaration or statement or definition?
 
 // function declaration is a statement that declares a function.
@@ -29,6 +29,37 @@
 // first class function is a function that can be passed 
 // as an argument to another function, 
 // and can be returned by another function.
+
+// 1.you can assign a function to a variable like any other variable
+
+// const sayHello = ()=>{
+//     return "hello"
+// }
+// console.log(sayHello())
+
+
+// 2.you can pass as an arugment to another function
+
+// const say=(greeter, person)=>{
+//      return greeter() + " "+ person
+// }
+
+// console.log(say(sayHello, "Ram"))
+
+
+// 3.you can return a function from another function
+
+// const greetMaker = greeting=>{
+//     return person=>{
+//         return greeting + " " +person ;
+//     }
+// }
+
+// const greetMakers = greetMaker("Hi")
+// console.log(greetMakers("Jack"))
+
+
+
  
 //  function square(num){
 //     return num * num;
@@ -41,6 +72,24 @@
 // result(square); // square is: 36
 
 
+// example
+// const Person = {
+//     play:(name) => {
+//         return `Hey ${name} is playing`;
+//     },
+//     dance:(name) => {
+//         return `${name} can dance`
+//     },
+//     walk:(name) => {
+//         return `I am sure ${name} can walk `
+//     },
+// }
+ 
+// console.log(Person.play("Chibueze"));
+// console.log(Person.dance("Chibueze"));
+// console.log(Person.walk("Chibueze"));
+
+
 // q / what is higher order function?
 
 // higher order function is a function 
@@ -51,6 +100,42 @@
 //   }
 //   const doubleUp = doubleFunc;
 //   console.log('Double',doubleUp(50)); 
+
+
+//example
+
+//The map function takes other function as argument
+// function doubleElements(x){
+//     return 2*x;
+//   }
+  
+//   let DoubleResult=[1,2,3,4,5,6].map(doubleElements)
+  
+//   function filterElemLesThanTwo(x){
+//     return x<2
+//   }
+  
+//   let ResultLessThanTwo=[1,2,3,4,5,6].filter(filterElemLesThanTwo)
+  
+//    console.log(DoubleResult)
+//    console.log(ResultLessThanTwo)
+
+
+
+// q12: callback function
+// call back function is a 
+// function that is passed to another function as an argument.
+
+
+function k(name){
+    console.log(`hello ${name}`);
+}
+
+function result(o){
+    var name = prompt("Enter your name");
+    o(name);
+}
+result(k); // hello
 
 
 
@@ -75,8 +160,8 @@
 // Q6-Function Scope
 
 // var num1=20,
-//   num2=3,
-//   name="Roadside Coder";
+//     num2=3,
+//     name="Roadside Coder";
 // function multiply(){
 //   return num1 * num2;
 // }
@@ -125,12 +210,20 @@
 // };
 // fun();  // undefined
 
+
+// var y = 21;
+// function res(){
+//   console.log(x);
+//   var x = 20;
+// };
+// res(); 
+
 // q10 : params vs arguments
 
 // function square(num){ // parameter
 //     return num * num;
 // }
-// console.log(square(2)); // arugment
+// console.log(square(2)); // Arugment
 
 
 
@@ -169,20 +262,7 @@
 
 
 
-// q12: callback function
-// call back function is a 
-// function that is passed to another function as an argument.
 
-
-// function k(name){
-//     console.log(`hello ${name}`);
-// }
-
-// function result(o){
-//     var name = prompt("Enter your name");
-//     o(name);
-// }
-// result(k); // hello
 
 
 
@@ -224,7 +304,8 @@
 // fn(1,3,2); it's shows 1,3,2
 
 // const  fnArr = ()=>{
-// console.log(arguments)};
+// console.log(arguments)
+// };
 
 // fnArr(1,3,2); //  it's  shows error because of arguments is not defined
 

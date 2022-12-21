@@ -11,6 +11,7 @@
 //     age:"25",
 //     getDetails(){
 //         console.log(this.name)
+//         console.log("age :",this.age, "" ,"name:",this.name)
 //     },
 // };
 
@@ -35,7 +36,7 @@
 // const user={
 //     firstName:"Ram",
 //     childObj:{
-//         NewName : "Ramachandran",
+//         NewName : "Rama S",
 //         getName(){
 //             console.log(this.NewName, "and", this.firstName)
 //         }
@@ -62,12 +63,16 @@
 
 // q 3
 
+// first we get window object
 // function makeUser(){
 //     return{
 //         name:"john",
 //         ref:this,
 //     }
 // }
+
+
+// how will fix this issue the below example for your reference
 
 // function makeUser(){
 //     return{
@@ -78,10 +83,10 @@
 //     }
 // }
 
-// const user =makeUser()
-
+// const user = makeUser()
+// console.log(user.ref) => ref refer to window that's y we don't get any output
 // console.log(user.ref().name)
-// => ref refering to window that's y we don't get any output
+// john output
 
 
 
@@ -200,3 +205,50 @@
 
 // const res = calc.add(10).multiply(5).subtract(30).add(10)
 // console.log(res.total)
+
+
+
+
+// q 9
+
+
+
+function Calculator() {
+    this.sum = 0;
+    this.number = function (initialValue) {
+      this.sum = initialValue;
+      return this;
+    };
+  
+    this.add = function (val) {
+      this.sum += val;
+      return this;
+    };
+    this.sub = function (val) {
+      this.sum -= val;
+      return this;
+    };
+    this.multiply = function (val) {
+      this.sum *= val;
+      return this;
+    };
+    this.divide = function (val) {
+      this.sum /= val;
+      return this;
+    };
+    this.print = function () {
+      console.log(this.sum);
+      return this;
+    };
+  }
+  const calc = new Calculator();
+  calc
+    .number(10)
+    .add(3)
+    .print()
+    .sub(6)
+    .print()
+    .multiply(10)
+    .print()
+    .divide(2)
+    .print();
